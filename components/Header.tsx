@@ -8,7 +8,7 @@ import {
   FaRegWindowClose,
 } from "react-icons/fa";
 import { TbLetterPSmall, TbSquareRoundedLetterP } from "react-icons/tb";
-import logo from "../public/assets/images/logo.png";
+import logo from "../public/assets/images/logo/logo1.png";
 import Image from "next/image";
 import Link from "next/link";
 import { FaMobile } from "react-icons/fa6";
@@ -18,9 +18,9 @@ import { IoMdMail } from "react-icons/io";
 const Header = () => {
   const [togglemenu, setTogglemenu] = useState(false);
 
-  return (
-    <nav className="bg-white h-[140px] w-full flex shadow sticky top-0 z-10 justify-between px-3  py-3 ">
-      <Image className="w-24 md:w-36 h-28  object-contain" src={logo} alt="" />
+  return ( 
+    <nav className="bg-white h-[120px] sm:h-[140px] md:h-[180px] w-full flex shadow sticky top-0 z-10 justify-between px-3  py-3 ">
+      <Image className="w-24 h-24 md:w-36 sm:w-32 md:h-36 sm:h-32 xl:h-40 xl:w-40 object-contain" src={logo} alt="" />
       <div className="md:flex justify-start items-center hidden">
           <Link className="hover:underline text-blue-500 pr-3" href="/">Home</Link>
           <Link className="hover:underline text-blue-500 pr-3" href="/dashboard">Project Details</Link>

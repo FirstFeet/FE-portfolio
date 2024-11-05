@@ -97,6 +97,12 @@
   padding-top:150px !important;
 }
 
+@media (max-width:768px) {
+  .carousel-container-knowledge{
+    padding-top:200px !important;
+  }
+}
+
 .react-multi-carousel-list {
   padding-top: 20px;
   /* margin-left:100px; */
