@@ -28,7 +28,7 @@ export default async function TechSkills() {
    "vcs" : <GoVersions className="w-5 h-5" />,
   } as any;
 
-  let data = await fetch(`${API_URL}/tech-skills-data`, { next: { revalidate: 3600 } })
+  let data = await fetch(`${API_URL}/tech-skills-data`, { cache:'no-store'  })
   let techSkills = await data.json()
 
   return (
