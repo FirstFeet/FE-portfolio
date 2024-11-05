@@ -11,7 +11,11 @@ export default async function Page() {
         <>
             {projects.map((company: any,index: number) => {
                 return (
-                    <ExperienceTile key={index} title={company.Company} projects={company.ProjectList}/>
+                    <>
+                        <div>**************</div>
+                        <ExperienceTile key={index} title={company.Company} projects={company.ProjectList}/>
+                        <div>**************</div>
+                    </>
                 )
             })}
         </>
