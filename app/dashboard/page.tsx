@@ -8,7 +8,7 @@ export default async function Page() {
     let projects = await data.json()
     return (
         <>
-            {projects.default.map((company: any,index: number) => {
+            {projects?.default?.map((company: any,index: number) => {
                 return (
                     <ExperienceTile key={index} title={company.Company} projects={company.ProjectList}/>
                 )
