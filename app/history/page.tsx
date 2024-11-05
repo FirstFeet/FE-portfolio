@@ -1,4 +1,4 @@
-import Dashboard from "@/components/Dashboard"
+// import Dashboard from "@/components/Dashboard"
 import myData from '../../assets/data/workHistory.json'
 
 export default async function Page() {

@@ -1,16 +1,16 @@
 import React from "react";
 import CardData from "./CardData";
-const ExperienceTile = ({title, projects}: {String, any}) => {
+const ExperienceTile = (props: any) => {
 
 return (
     <section className="py-20 bg-[#fcfcfc] px-2">
         <div className="container">
             <h5 className="bg-[rgb(191,200,203)] inline-block rounded-full  px-5 py-3 border-2 border-black font-bold text-2xl ">
-                {title}
+                {props.title}
             </h5>
         </div>
         <div className="grid gap-3 px-10 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 mt-14">
-            {projects.map(project => {
+            {props.projects.map((project: any) => {
                 return (
                     <CardData 
                         title={project.title}

@@ -1,12 +1,4 @@
 import React from "react";
-import { FaMicrophoneAlt } from "react-icons/fa";
-import { GiPayMoney, GiFlyingBeetle } from "react-icons/gi";
-import { GoBriefcase } from "react-icons/go";
-import { PiPopcornBold } from "react-icons/pi";
-import { SiHappycow } from "react-icons/si";
-import { BiSolidPyramid } from "react-icons/bi";
-import { MdOutlineWaterDrop, MdOutlineAgriculture } from "react-icons/md";
-import { IoSettingsOutline } from "react-icons/io5";
 
 import { GiPlayerTime } from "react-icons/gi";
 import { FaDatabase } from "react-icons/fa6";
@@ -19,14 +11,7 @@ import { GoContainer } from "react-icons/go";
 import { FaTools } from "react-icons/fa";
 import { GoVersions } from "react-icons/go";
 
-
 import {API_URL} from "../lib/dataConstants"
-
-
-
-
-
-
 
 export default async function TechSkills() {
 
@@ -41,7 +26,7 @@ export default async function TechSkills() {
    "container" : <GoContainer className="w-5 h-5" />,
    "tools" : <FaTools className="w-5 h-5" />,
    "vcs" : <GoVersions className="w-5 h-5" />,
-  }
+  } as any;
 
   let data = await fetch(`${API_URL}/tech-skills-data`, { next: { revalidate: 3600 } })
   let techSkills = await data.json()
@@ -56,9 +41,9 @@ export default async function TechSkills() {
             </h1>
           </div>
           <div className="px-3 md:px-10 grid md:grid-cols-5 grid-cols-3 gap-y-10 gap-3 md:gap-10">
-            {techSkills.map((item,index) => {
+            {techSkills.map((item:any ,index:number) => {
               return ( <div key={index} className="flex flex-col justify-center items-center border-2 rounded-md border-[#605c84] p-4 ">
-                  <div className="flex text-white underline" key={icon[item.icon]}>
+                  <div className="flex text-white underline" key={index}>
                     {icon[item.icon]}
                     <span className="text-white text-sm md:text-base ml-2">{item.title}</span>
                   </div>

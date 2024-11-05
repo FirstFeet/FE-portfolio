@@ -6,11 +6,11 @@ import DomainKnowledge from "@/components/DomainKnowledge"
 import myData from '../../../assets/data/Projects.json'
 
 export default async function Page() {
-    const params = useParams<{ tag: string; item: string }>()
+    const params = useParams<{ id: string; item: string }>()
     return (
         <div>
             param - {params.id}
-            <DomainKnowledge selectedDomain={params.id} />
+            <DomainKnowledge selectedDomain={params.id} itemRemoved={()=>{}} />
         </div>
     )
   }

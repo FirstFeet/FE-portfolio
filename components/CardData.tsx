@@ -1,6 +1,7 @@
 "use client";
-const CardData = ({title, description, link, role}) => {
+const CardData = (props: any) => {
 
+    let {title, description, link, role} = props
     function openSite(link: string | URL | undefined): undefined {
         typeof window !== "undefined" ? window.open(link, '_blank', 'noopener,noreferrer'): undefined;
     }

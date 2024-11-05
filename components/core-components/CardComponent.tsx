@@ -8,7 +8,8 @@ import {
   } from "@/components/ui/card"
 import Image from "next/image"
 
-function CardComponent({title, description,imageTop,image}) {
+function CardComponent(props:any) {
+    let {title, description,imageTop,image} = props
   return (
     <Card>
         {imageTop && 

@@ -8,12 +8,13 @@ import {
   } from "@/components/ui/carousel"
 import CardComponent from "./CardComponent"
 
-function CarouselComponent({items}) {
+function CarouselComponent(props:any) {
+  let {items} = props;
   console.log("items",items)
   return (
     <Carousel>
         <CarouselContent>
-            {items.map((item,index)=> {
+            {items.map((item:any,index:any)=> {
                 return <CarouselItem key={index}>
                   <CardComponent 
                     title={item.title} 

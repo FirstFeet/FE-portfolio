@@ -1,4 +1,7 @@
-function DomainKnowledge({selectedDomain,itemRemoved}) {
+function DomainKnowledge(props: any) {
+
+    let {selectedDomain ,itemRemoved} = props
+
   return ( 
         <>
             <div id="default-modal" aria-hidden="true" className="fixed top-0 right-0 left-50 z-50 justify-center items-center max-w-full">
@@ -26,7 +29,7 @@ function DomainKnowledge({selectedDomain,itemRemoved}) {
                                 Work-Flow:
                             </p>
                             <ul >
-                            {selectedDomain?.workFlow?.map(value => {
+                            {selectedDomain?.workFlow?.map((value: any) => {
                                 return (
                                     <li className="pb-2 text-sm sm:pb-5 sm:text-base"><span dangerouslySetInnerHTML={{__html: value}} /></li>
                                 )
