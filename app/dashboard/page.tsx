@@ -4,11 +4,11 @@ import ExperienceTile from "@/components/ExperienceTile"
 
 export default async function Page() {
 
-    let data = await fetch(`${API_URL}/project-data`)
+    let data = await fetch(`${API_URL}/project-data`, { next: { revalidate: 3600 } })
     let projects = await data.json()
     return (
         <>
-            {projects?.default?.map((company: any,index: number) => {
+            {projects.map((company: any,index: number) => {
                 return (
                     <ExperienceTile key={index} title={company.Company} projects={company.ProjectList}/>
                 )
