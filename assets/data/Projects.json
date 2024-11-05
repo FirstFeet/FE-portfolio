@@ -1,0 +1,44 @@
+[
+{
+ "Company":"List of Projects Handles in Photon",
+ "ProjectList":[
+    {
+        "title": "Kohler E-Commerse Site",
+        "description": "Discover the immersive experience of fully personalized smart showering with Anthem+™.",
+        "role": "Tech Lead",
+        "link": "https://www.kohler.com/en"
+    },
+    {
+        "title": "Annsacks E-Commerse Site",
+        "description": "For a limited time, shop a wide variety of ceramic, porcelain, stone and more – up to 75% off.",
+        "role": "Tech Lead",
+        "link": "https://annsacks.kohler.com/"
+    },
+    {
+        "title": "Sterling E-Commerse Site",
+        "description": "It’s simple. When you spec and install Sterling, we make life easy. Get the job done fast and get on to the next.",
+        "role": "Tech Lead",
+        "link": "https://sterling.kohler.com/en"
+    },
+    {
+        "title": "McKesson | Medical Supplies, Pharmaceuticals Healthcare Solutions",
+        "description": "The leading healthcare company for wholesale medical supplies & equipment, pharmaceutical distribution, and healthcare technology solutions.",
+        "role": "Tech Lead",
+        "link": "https://www.mckesson.com/"
+    }
+]
+},
+{
+    "Company":"List of Projects Handles in WeInvest",
+    "ProjectList":[
+       {
+           "title": "WeInvest",
+           "role": "Tech Lead",
+           "description": "We are an asset management firm that offers Systematic Quant products & diverse solutions integrted with the best wealth management platform.",
+           "link": "https://www.weinvest.net/"
+       }
+   ]
+   }
+
+
+]
