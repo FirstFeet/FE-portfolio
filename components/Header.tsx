@@ -31,13 +31,13 @@ const Header = () => {
           <div className="flex flex-row py-2">
             <FaMobile className="mr-2 text-blue-900"/>
             <div className="flex flex-col justify-center  pr-1 md:text-sm">
-              <p className="font-bold  text-blue-900">+91 9445512287</p>
+              <p className="font-bold  text-blue-900"><a href="tel:+919445512287">+91 9445512287</a></p>
             </div>
           </div>
           <div className="flex flex-row py-2">
             <IoMdMail className="mr-2  text-blue-900"/>
             <div className="flex flex-col justify-center w-24 pr-1 md:text-sm">
-              <p className="font-bold  text-blue-900">narayanarajk23@gmail.com</p>
+              <p className="font-bold  text-blue-900"><a href="mailto:narayanarajk23@gmail.com">narayanarajk23@gmail.com</a></p>
             </div>
           </div>
         </div>
