@@ -9,6 +9,9 @@
 .custom-dot-list-style {
   position:relative;
 }
+.react-multi-carousel-track{
+  padding-bottom: 50px !important;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

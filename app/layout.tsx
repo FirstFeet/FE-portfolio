@@ -31,7 +31,7 @@ export default function RootLayout({
         {/* <Blog/> */}
         {/* <Customers/> */}
         <Contact/>
-        {/* <Footer/> */}
+        <Footer/>
         <div>
           <ScrollToTopButton/>
         </div>

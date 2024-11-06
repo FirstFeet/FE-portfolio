@@ -22,9 +22,9 @@ const Header = () => {
     <nav className="bg-white h-[120px] sm:h-[140px] md:h-[180px] w-full flex shadow sticky top-0 z-10 justify-between px-3  py-3 ">
       <Image className="w-24 h-24 md:w-36 sm:w-32 md:h-36 sm:h-32 xl:h-40 xl:w-40 object-contain" src={logo} alt="" />
       <div className="md:flex justify-start items-center hidden">
-          <Link className="hover:underline text-blue-500 pr-3" href="/">Home</Link>
-          <Link className="hover:underline text-blue-500 pr-3" href="/dashboard">Project Details</Link>
-          <Link className="hover:underline text-blue-500" href="/history">Work History</Link>
+          <Link className="font-semibold hover:bg-blue-800 hover:text-blue-50 text-black px-3 py-2 rounded-lg" href="/">Home</Link>
+          <Link className="font-semibold hover:bg-blue-800 hover:text-blue-50 text-black px-3 py-2 rounded-lg" href="/dashboard">Project Details</Link>
+          <Link className="font-semibold hover:bg-blue-800 hover:text-blue-50 text-black px-3 py-2 rounded-lg" href="/history">Work History</Link>
       </div>
       <div className="flex justify-start sm:mr-5 items-center md:w-1/3">
         <div className="md:flex flex-col hidden justify-center  border-gray-300 h-[1/2] pr-1">
@@ -65,8 +65,10 @@ const Header = () => {
       {togglemenu && (
         <div className="bg-white w-full md:w-full md:h-full h-full rounded-md fixed top-0 right-0">
           <div className="p-10">
-            <div className="flex justify-between px-2 pt-5">
-              <div className="border-b-2 border-blue-500 p3-5 ">
+            <div className="flex justify-between px-2 pt-5 border-b-2 border-blue-500">
+              <div className="p3-5 ">
+              </div>
+              <div className="p3-5 ">
                 <Image
                   className="w-24 md:w-36 h-28  object-contain"
                   src={logo}
@@ -81,9 +83,9 @@ const Header = () => {
             <div className="py-2 mt-3">
               <p className="text-lg font-bold pt-1 text-black">Navigation</p>
               <ul className=" ml-5 text-base list-disc font-medium py-1 w-[150px] text-gray-500">
-                <li className="cursor-pointer" onClick={() => setTogglemenu(!togglemenu)}><Link className="hover:underline text-blue-500" href="/">Home</Link> </li>
-                <li className="cursor-pointer" onClick={() => setTogglemenu(!togglemenu)}><Link className="hover:underline text-blue-500" href="/dashboard">Project Details</Link> </li>
-                <li className="cursor-pointer" onClick={() => setTogglemenu(!togglemenu)}><Link className="hover:underline text-blue-500" href="/history">Work History</Link> </li>
+                <li className="cursor-pointer" onClick={() => setTogglemenu(!togglemenu)}><Link className="font-semibold hover:underline hover:text-blue-900 text-blue-900 pr-3" href="/">Home</Link> </li>
+                <li className="cursor-pointer" onClick={() => setTogglemenu(!togglemenu)}><Link className="font-semibold hover:underline hover:text-blue-900 text-blue-900 pr-3" href="/dashboard">Project Details</Link> </li>
+                <li className="cursor-pointer" onClick={() => setTogglemenu(!togglemenu)}><Link className="font-semibold hover:underline hover:text-blue-900 text-blue-900" href="/history">Work History</Link> </li>
               </ul>
             </div>
             <div className="py-2">

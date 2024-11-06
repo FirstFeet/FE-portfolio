@@ -109,7 +109,7 @@ const DomainKnowledgeLanding = () => {
   }
   return (
     <section className="py-20">
-      <div className="container relative">
+      <div className="container relative max-w-full">
           <div className="">
             <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mb-10 absolute w-full">
               <div>
@@ -161,7 +161,7 @@ const DomainKnowledgeLanding = () => {
                   return (
                     <div
                       key={index}
-                      className=" bg-white border border-gray-200 rounded-lg shadow relative flex flex-col justify-center items-center"
+                      className="min-h-[100%] bg-white border border-gray-200 rounded-lg shadow relative flex flex-col justify-center items-center"
                     >
                       <div className="relative">
                         <div className="w-full h-[280px]">

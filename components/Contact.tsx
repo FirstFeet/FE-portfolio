@@ -22,7 +22,7 @@ const Contact = () => {
       <div className="flex md:flex-row flex-col justify-between border-[#7979cf] text-[#a7a7ef]">
         <div className="mt-0 mb-5">
             <h1 className="text-white text-3xl font-bold  py-2">Professional Summary</h1>
-            <ul className="list-disc mr-6">
+            <ul className="list-disc ml-3">
               <li className="py-1 mr-6">Overall 14+ years of experience in development of Web & Enterprise applications.</li>
               <li className="py-1 mr-6">6 + years of experience in react and 2+ years of experience in Next js.</li>
               <li className="py-1 mr-6">Hands on experience in PERN Stack, Next 14, Express, Strapi.</li>
