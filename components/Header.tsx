@@ -31,13 +31,13 @@ const Header = () => {
           <div className="flex flex-row py-2">
             <FaMobile className="mr-2 text-blue-900"/>
             <div className="flex flex-col justify-center  pr-1 md:text-sm">
-              <p className="font-bold  text-blue-900"><a href="tel:+919445512287">+91 9445512287</a></p>
+              <p className="font-bold  text-blue-900"><a className="hover:underline" href="tel:+919445512287">+91 9445512287</a></p>
             </div>
           </div>
           <div className="flex flex-row py-2">
             <IoMdMail className="mr-2  text-blue-900"/>
             <div className="flex flex-col justify-center w-24 pr-1 md:text-sm">
-              <p className="font-bold  text-blue-900"><a href="mailto:narayanarajk23@gmail.com">narayanarajk23@gmail.com</a></p>
+              <p className="font-bold  text-blue-900"><a className="hover:underline" href="mailto:narayanarajk23@gmail.com">narayanarajk23@gmail.com</a></p>
             </div>
           </div>
         </div>
@@ -88,15 +88,15 @@ const Header = () => {
             </div>
             <div className="py-2">
               <p className="text-lg font-bold py-1 text-black">Mobile Number</p>
-              <p className="text-base font-medium py-1 w-[150px] text-gray-500">
+              <p className="text-base font-medium py-1 w-[150px] text-blue-900">
                 {" "}
-                <a href="tel:+919445512287">+91 9445512287</a>
+                <a className="hover:underline" href="tel:+919445512287">+91 9445512287</a>
               </p>
             </div>
             <div className="py-2">
               <p className="text-lg font-bold py-1 text-black">Email Address</p>
-              <p className="text-base font-medium py-1 w-[250px] text-gray-500">
-                <a href="mailto:narayanarajk23@gmail.com">narayanarajk23@gmail.com</a>
+              <p className="text-base font-medium py-1 w-[250px] text-blue-900">
+                <a className="hover:underline" href="mailto:narayanarajk23@gmail.com">narayanarajk23@gmail.com</a>
               </p>
             </div>
             {/* <div className="flex justify-between mt-5 w-[85%]   ">
