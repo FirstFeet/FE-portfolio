@@ -6,7 +6,6 @@ import b_1 from "../public/assets/images/blog/b-1.jpg";
 import b_2 from "../public/assets/images/blog/b-2.jpg";
 import b_3 from "../public/assets/images/blog/b-3.jpg";
 import { IoLocation } from "react-icons/io5";
-import { GoogleMap, useJsApiLoader } from '@react-google-maps/api'
 
 const Contact = () => {
   return (
